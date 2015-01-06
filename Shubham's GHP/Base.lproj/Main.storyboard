@@ -26,6 +26,51 @@
                                     <action selector="buttonLabelChange:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="aen-ev-gbQ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XG8-fq-ZRt">
+                                <rect key="frame" x="34" y="295" width="249" height="36"/>
+                                <color key="tintColor" red="0.28482401969999999" green="0.31300103410000002" blue="0.63368055560000003" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Interests">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="06U-vn-Xp8">
+                                <rect key="frame" x="33" y="340" width="249" height="36"/>
+                                <color key="tintColor" red="0.28482401969999999" green="0.31300103410000002" blue="0.63368055560000003" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Favorite Music">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BvL-de-K1Y">
+                                <rect key="frame" x="33" y="385" width="249" height="36"/>
+                                <color key="tintColor" red="0.28482401969999999" green="0.31300103410000002" blue="0.63368055560000003" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Awards and Honors">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y8w-3T-7mu">
+                                <rect key="frame" x="34" y="430" width="249" height="36"/>
+                                <color key="tintColor" red="0.28482401969999999" green="0.31300103410000002" blue="0.63368055560000003" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Inspirations">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tRd-8T-38l">
+                                <rect key="frame" x="34" y="475" width="249" height="36"/>
+                                <color key="tintColor" red="0.28482401969999999" green="0.31300103410000002" blue="0.63368055560000003" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Social Media">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nic-Ka-1BI">
+                                <rect key="frame" x="34" y="530" width="249" height="36"/>
+                                <color key="tintColor" red="0.28482401969999999" green="0.31300103410000002" blue="0.63368055560000003" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Source Code">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goToGitHub:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="a93-VL-18e"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>

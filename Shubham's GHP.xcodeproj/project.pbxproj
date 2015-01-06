@@ -445,6 +445,7 @@
 				51E1C6721A5B81DA0081F458 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		51E1C6731A5B81DA0081F458 /* Build configuration list for PBXNativeTarget "Shubham's GHPTests" */ = {
 			isa = XCConfigurationList;
@@ -453,6 +454,7 @@
 				51E1C6751A5B81DA0081F458 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

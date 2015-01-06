@@ -10,6 +10,7 @@
 
 @interface ViewController : UIViewController //
 
+- (IBAction)goToGitHub:(id)sender;
 
 
 @end
