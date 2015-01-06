@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  PCView.h
 //  Shubham's GHP
 //
 //  Created by Shubham Gupte on 1/5/15.
@@ -8,9 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController //
-
-
+@interface PCView : UIView
 
 @end
-

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>C0CCEB04-C852-4C22-9DB7-440488B52D69</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Shubham's GHP</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>2476BCE1EAEDFB95BC16969DDFA300533A6BDF4B</key>
+		<string>https://github.com/SylvrG/Shubham-s-GHP.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Shubham's GHP.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>2476BCE1EAEDFB95BC16969DDFA300533A6BDF4B</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/SylvrG/Shubham-s-GHP.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>2476BCE1EAEDFB95BC16969DDFA300533A6BDF4B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>2476BCE1EAEDFB95BC16969DDFA300533A6BDF4B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Shubham's%20GHP</string>
+		</dict>
+	</array>
+</dict>
+</plist>

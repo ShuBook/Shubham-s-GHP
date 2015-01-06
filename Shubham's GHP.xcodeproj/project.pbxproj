@@ -14,6 +14,11 @@
 		51E1C65E1A5B81DA0081F458 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51E1C65D1A5B81DA0081F458 /* Images.xcassets */; };
 		51E1C6611A5B81DA0081F458 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51E1C65F1A5B81DA0081F458 /* LaunchScreen.xib */; };
 		51E1C66D1A5B81DA0081F458 /* Shubham_s_GHPTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 51E1C66C1A5B81DA0081F458 /* Shubham_s_GHPTests.m */; };
+		51E1C67D1A5B9A000081F458 /* image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 51E1C6781A5B9A000081F458 /* image.jpg */; };
+		51E1C67E1A5B9A000081F458 /* image@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 51E1C6791A5B9A000081F458 /* image@2x.jpg */; };
+		51E1C67F1A5B9A000081F458 /* image@3x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 51E1C67A1A5B9A000081F458 /* image@3x.jpg */; };
+		51E1C6801A5B9A000081F458 /* StyleKitName.m in Sources */ = {isa = PBXBuildFile; fileRef = 51E1C67C1A5B9A000081F458 /* StyleKitName.m */; };
+		51E1C6861A5B9BFE0081F458 /* PCView.m in Sources */ = {isa = PBXBuildFile; fileRef = 51E1C6851A5B9BFE0081F458 /* PCView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +45,13 @@
 		51E1C6661A5B81DA0081F458 /* Shubham's GHPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Shubham's GHPTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		51E1C66B1A5B81DA0081F458 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		51E1C66C1A5B81DA0081F458 /* Shubham_s_GHPTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Shubham_s_GHPTests.m; sourceTree = "<group>"; };
+		51E1C6781A5B9A000081F458 /* image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image.jpg; sourceTree = "<group>"; };
+		51E1C6791A5B9A000081F458 /* image@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "image@2x.jpg"; sourceTree = "<group>"; };
+		51E1C67A1A5B9A000081F458 /* image@3x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "image@3x.jpg"; sourceTree = "<group>"; };
+		51E1C67B1A5B9A000081F458 /* StyleKitName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StyleKitName.h; path = paintcode/StyleKitName.h; sourceTree = "<group>"; };
+		51E1C67C1A5B9A000081F458 /* StyleKitName.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StyleKitName.m; path = paintcode/StyleKitName.m; sourceTree = "<group>"; };
+		51E1C6841A5B9BFE0081F458 /* PCView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCView.h; sourceTree = "<group>"; };
+		51E1C6851A5B9BFE0081F458 /* PCView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,11 +93,16 @@
 		51E1C64F1A5B81DA0081F458 /* Shubham's GHP */ = {
 			isa = PBXGroup;
 			children = (
+				51E1C6771A5B9A000081F458 /* images */,
+				51E1C67B1A5B9A000081F458 /* StyleKitName.h */,
+				51E1C67C1A5B9A000081F458 /* StyleKitName.m */,
 				51E1C6541A5B81DA0081F458 /* AppDelegate.h */,
 				51E1C6551A5B81DA0081F458 /* AppDelegate.m */,
 				51E1C6571A5B81DA0081F458 /* ViewController.h */,
 				51E1C6581A5B81DA0081F458 /* ViewController.m */,
 				51E1C65A1A5B81DA0081F458 /* Main.storyboard */,
+				51E1C6841A5B9BFE0081F458 /* PCView.h */,
+				51E1C6851A5B9BFE0081F458 /* PCView.m */,
 				51E1C65D1A5B81DA0081F458 /* Images.xcassets */,
 				51E1C65F1A5B81DA0081F458 /* LaunchScreen.xib */,
 				51E1C6501A5B81DA0081F458 /* Supporting Files */,
@@ -117,6 +134,17 @@
 				51E1C66B1A5B81DA0081F458 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		51E1C6771A5B9A000081F458 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				51E1C6781A5B9A000081F458 /* image.jpg */,
+				51E1C6791A5B9A000081F458 /* image@2x.jpg */,
+				51E1C67A1A5B9A000081F458 /* image@3x.jpg */,
+			);
+			name = images;
+			path = paintcode/images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,7 +229,10 @@
 			files = (
 				51E1C65C1A5B81DA0081F458 /* Main.storyboard in Resources */,
 				51E1C6611A5B81DA0081F458 /* LaunchScreen.xib in Resources */,
+				51E1C67E1A5B9A000081F458 /* image@2x.jpg in Resources */,
 				51E1C65E1A5B81DA0081F458 /* Images.xcassets in Resources */,
+				51E1C67D1A5B9A000081F458 /* image.jpg in Resources */,
+				51E1C67F1A5B9A000081F458 /* image@3x.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,6 +253,8 @@
 				51E1C6591A5B81DA0081F458 /* ViewController.m in Sources */,
 				51E1C6561A5B81DA0081F458 /* AppDelegate.m in Sources */,
 				51E1C6531A5B81DA0081F458 /* main.m in Sources */,
+				51E1C6801A5B9A000081F458 /* StyleKitName.m in Sources */,
+				51E1C6861A5B9BFE0081F458 /* PCView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
