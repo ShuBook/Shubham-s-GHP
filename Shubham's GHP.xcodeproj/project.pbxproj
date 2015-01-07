@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		51D7496F1A5C382B00D10666 /* InspiratiocCView.m in Sources */ = {isa = PBXBuildFile; fileRef = 51D7496E1A5C382B00D10666 /* InspiratiocCView.m */; };
+		51D749721A5C7D2300D10666 /* Tony Stark.m in Sources */ = {isa = PBXBuildFile; fileRef = 51D749711A5C7D2300D10666 /* Tony Stark.m */; };
 		51E1C6531A5B81DA0081F458 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 51E1C6521A5B81DA0081F458 /* main.m */; };
 		51E1C6561A5B81DA0081F458 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 51E1C6551A5B81DA0081F458 /* AppDelegate.m */; };
 		51E1C6591A5B81DA0081F458 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51E1C6581A5B81DA0081F458 /* ViewController.m */; };
@@ -32,6 +34,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		51D7496D1A5C382B00D10666 /* InspiratiocCView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InspiratiocCView.h; sourceTree = "<group>"; };
+		51D7496E1A5C382B00D10666 /* InspiratiocCView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InspiratiocCView.m; sourceTree = "<group>"; };
+		51D749701A5C7D2300D10666 /* Tony Stark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Tony Stark.h"; sourceTree = "<group>"; };
+		51D749711A5C7D2300D10666 /* Tony Stark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Tony Stark.m"; sourceTree = "<group>"; };
 		51E1C64D1A5B81DA0081F458 /* Shubham's GHP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Shubham's GHP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		51E1C6511A5B81DA0081F458 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		51E1C6521A5B81DA0081F458 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -95,9 +101,13 @@
 			children = (
 				51E1C6771A5B9A000081F458 /* images */,
 				51E1C67B1A5B9A000081F458 /* StyleKitName.h */,
+				51D749701A5C7D2300D10666 /* Tony Stark.h */,
+				51D749711A5C7D2300D10666 /* Tony Stark.m */,
 				51E1C67C1A5B9A000081F458 /* StyleKitName.m */,
 				51E1C6541A5B81DA0081F458 /* AppDelegate.h */,
 				51E1C6551A5B81DA0081F458 /* AppDelegate.m */,
+				51D7496D1A5C382B00D10666 /* InspiratiocCView.h */,
+				51D7496E1A5C382B00D10666 /* InspiratiocCView.m */,
 				51E1C6571A5B81DA0081F458 /* ViewController.h */,
 				51E1C6581A5B81DA0081F458 /* ViewController.m */,
 				51E1C65A1A5B81DA0081F458 /* Main.storyboard */,
@@ -254,6 +264,8 @@
 				51E1C6561A5B81DA0081F458 /* AppDelegate.m in Sources */,
 				51E1C6531A5B81DA0081F458 /* main.m in Sources */,
 				51E1C6801A5B9A000081F458 /* StyleKitName.m in Sources */,
+				51D749721A5C7D2300D10666 /* Tony Stark.m in Sources */,
+				51D7496F1A5C382B00D10666 /* InspiratiocCView.m in Sources */,
 				51E1C6861A5B9BFE0081F458 /* PCView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
