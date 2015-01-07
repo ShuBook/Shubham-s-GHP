@@ -108,6 +108,9 @@
                                 <state key="normal" title="Tesla">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="hpc-qf-VBh" kind="push" id="Ml9-7Z-4uQ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dxV-Cl-xKC">
                                 <rect key="frame" x="31" y="415" width="146" height="75"/>
@@ -115,6 +118,9 @@
                                 <state key="normal" title="Jobs">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="vbW-JG-53u" kind="push" id="ZJs-bT-tRY"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UzI-B8-Xha">
                                 <rect key="frame" x="31" y="115" width="146" height="75"/>
@@ -137,6 +143,25 @@
             </objects>
             <point key="canvasLocation" x="607" y="347"/>
         </scene>
+        <!--Steve Jobs-->
+        <scene sceneID="V4X-vT-hyB">
+            <objects>
+                <viewController title="Steve Jobs" id="vbW-JG-53u" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jzc-51-xnM"/>
+                        <viewControllerLayoutGuide type="bottom" id="yQg-Zg-5qo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="U5F-2k-Oc2" customClass="JobsI">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="sbD-kA-jhE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XqD-TB-pGg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1100" y="1052"/>
+        </scene>
         <!--Tony Stark -->
         <scene sceneID="4U5-cf-qZS">
             <objects>
@@ -145,16 +170,59 @@
                         <viewControllerLayoutGuide type="top" id="3ro-iO-qf1"/>
                         <viewControllerLayoutGuide type="bottom" id="P91-Ym-WMg"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="XbO-xN-Lwc" customClass="Tony_Stark">
+                    <view key="view" contentMode="scaleToFill" id="XbO-xN-Lwc">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Cc-Of-eVs">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="556"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="3x 22-51-19-252.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="xrs-13-B0S">
+                                        <rect key="frame" x="140" y="118" width="320" height="320"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="centerX" secondItem="xrs-13-B0S" secondAttribute="centerX" id="FqQ-gw-Ybc"/>
+                                    <constraint firstAttribute="centerY" secondItem="xrs-13-B0S" secondAttribute="centerY" id="TtV-rh-bf2"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Screen Shot 2015-01-07 at 8.15.33 AM.png" translatesAutoresizingMaskIntoConstraints="NO" id="No9-1f-yHf">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="556"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="0Cc-Of-eVs" secondAttribute="centerX" id="4qu-h7-QFQ"/>
+                            <constraint firstAttribute="centerY" secondItem="No9-1f-yHf" secondAttribute="centerY" id="DgM-Ze-S8J"/>
+                            <constraint firstAttribute="centerX" secondItem="No9-1f-yHf" secondAttribute="centerX" id="Yhh-P9-EV9"/>
+                            <constraint firstAttribute="centerY" secondItem="0Cc-Of-eVs" secondAttribute="centerY" id="yHW-YL-lT9"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Wto-kW-Gsa"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dfH-zA-vfI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1277" y="369"/>
+            <point key="canvasLocation" x="1486" y="494"/>
+        </scene>
+        <!--Tesla-->
+        <scene sceneID="aE8-dx-Om3">
+            <objects>
+                <viewController title="Tesla" id="hpc-qf-VBh" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4FZ-tA-742"/>
+                        <viewControllerLayoutGuide type="bottom" id="4zo-At-zG0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ped-XR-aCg" customClass="TeslaIClass">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="NIi-Kz-0RT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="svP-3n-1bt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1277" y="-352"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="IDC-EM-JiE">
@@ -175,4 +243,8 @@
             <point key="canvasLocation" x="-1002" y="347"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="3x 22-51-19-252.jpg" width="320" height="320"/>
+        <image name="Screen Shot 2015-01-07 at 8.15.33 AM.png" width="321" height="569"/>
+    </resources>
 </document>
