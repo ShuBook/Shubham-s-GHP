@@ -13,7 +13,7 @@
 
 
 - (void)drawRect:(CGRect)rect {
-    [StyleKitName drawAbout];
+    [StyleKitName drawAbout]; // draws page
     
 }
 
