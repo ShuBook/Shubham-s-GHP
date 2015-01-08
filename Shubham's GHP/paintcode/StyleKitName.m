@@ -236,6 +236,119 @@
     }
 }
 
++ (void)drawAbout
+{
+    //// General Declarations
+    CGContextRef context = UIGraphicsGetCurrentContext();
+
+    //// Color Declarations
+    UIColor* color = [UIColor colorWithRed: 0.871 green: 0.282 blue: 0.212 alpha: 1];
+    CGFloat colorHSBA[4];
+    [color getHue: &colorHSBA[0] saturation: &colorHSBA[1] brightness: &colorHSBA[2] alpha: &colorHSBA[3]];
+
+    UIColor* color8 = [UIColor colorWithHue: colorHSBA[0] saturation: 1 brightness: colorHSBA[2] alpha: colorHSBA[3]];
+    UIColor* color4 = [UIColor colorWithRed: 0.337 green: 0.588 blue: 0.737 alpha: 1];
+    UIColor* color6 = [UIColor colorWithRed: 1 green: 1 blue: 1 alpha: 1];
+
+    //// Shadow Declarations
+    UIColor* shadow = UIColor.blackColor;
+    CGSize shadowOffset = CGSizeMake(3.1, 3.1);
+    CGFloat shadowBlurRadius = 5;
+
+    //// Image Declarations
+    UIImage* instapic = [UIImage imageNamed: @"instapic.jpg"];
+    UIImage* r8 = [UIImage imageNamed: @"r8.png"];
+
+    //// Rectangle Drawing
+    UIBezierPath* rectanglePath = [UIBezierPath bezierPathWithRect: CGRectMake(0, 0, 320, 568)];
+    [color8 setFill];
+    [rectanglePath fill];
+
+
+    //// Rectangle 2 Drawing
+    UIBezierPath* rectangle2Path = [UIBezierPath bezierPathWithRoundedRect: CGRectMake(55, 202.5, 211, 163.5) cornerRadius: 10];
+    CGContextSaveGState(context);
+    CGContextSetShadowWithColor(context, shadowOffset, shadowBlurRadius, [shadow CGColor]);
+    CGContextBeginTransparencyLayer(context, NULL);
+    CGContextSaveGState(context);
+    [rectangle2Path addClip];
+    CGContextScaleCTM(context, 1.0, -1.0);
+    CGContextDrawTiledImage(context, CGRectMake(55, -158, instapic.size.width, instapic.size.height), instapic.CGImage);
+    CGContextRestoreGState(context);
+    CGContextEndTransparencyLayer(context);
+    CGContextRestoreGState(context);
+
+    [color4 setStroke];
+    rectangle2Path.lineWidth = 1;
+    [rectangle2Path stroke];
+
+
+    //// Info Drawing
+    CGRect infoRect = CGRectMake(36, 14, 249, 80);
+    {
+        NSString* textContent = @"About Me";
+        NSMutableParagraphStyle* infoStyle = NSMutableParagraphStyle.defaultParagraphStyle.mutableCopy;
+        infoStyle.alignment = NSTextAlignmentCenter;
+
+        NSDictionary* infoFontAttributes = @{NSFontAttributeName: [UIFont fontWithName: @"STHeitiTC-Medium" size: UIFont.labelFontSize], NSForegroundColorAttributeName: color6, NSParagraphStyleAttributeName: infoStyle};
+
+        CGFloat infoTextHeight = [textContent boundingRectWithSize: CGSizeMake(infoRect.size.width, INFINITY)  options: NSStringDrawingUsesLineFragmentOrigin attributes: infoFontAttributes context: nil].size.height;
+        CGContextSaveGState(context);
+        CGContextClipToRect(context, infoRect);
+        [textContent drawInRect: CGRectMake(CGRectGetMinX(infoRect), CGRectGetMinY(infoRect) + (CGRectGetHeight(infoRect) - infoTextHeight) / 2, CGRectGetWidth(infoRect), infoTextHeight) withAttributes: infoFontAttributes];
+        CGContextRestoreGState(context);
+    }
+
+
+    //// Info 2 Drawing
+    CGRect info2Rect = CGRectMake(55, 74, 249, 80);
+    {
+        NSString* textContent = @" - Junior in GSMST\n - GSMST TSA Historian\n - Loves Basketball and Soccer\n - Loves Cars just as much\n - Has a little humor";
+        NSMutableParagraphStyle* info2Style = NSMutableParagraphStyle.defaultParagraphStyle.mutableCopy;
+        info2Style.alignment = NSTextAlignmentLeft;
+
+        NSDictionary* info2FontAttributes = @{NSFontAttributeName: [UIFont fontWithName: @"STHeitiTC-Medium" size: 15], NSForegroundColorAttributeName: color6, NSParagraphStyleAttributeName: info2Style};
+
+        CGFloat info2TextHeight = [textContent boundingRectWithSize: CGSizeMake(info2Rect.size.width, INFINITY)  options: NSStringDrawingUsesLineFragmentOrigin attributes: info2FontAttributes context: nil].size.height;
+        CGContextSaveGState(context);
+        CGContextClipToRect(context, info2Rect);
+        [textContent drawInRect: CGRectMake(CGRectGetMinX(info2Rect), CGRectGetMinY(info2Rect) + (CGRectGetHeight(info2Rect) - info2TextHeight) / 2, CGRectGetWidth(info2Rect), info2TextHeight) withAttributes: info2FontAttributes];
+        CGContextRestoreGState(context);
+    }
+
+
+    //// Rectangle 3 Drawing
+    UIBezierPath* rectangle3Path = [UIBezierPath bezierPathWithRoundedRect: CGRectMake(14, 383, 293, 137) cornerRadius: 10];
+    CGContextSaveGState(context);
+    CGContextSetShadowWithColor(context, shadowOffset, shadowBlurRadius, [shadow CGColor]);
+    CGContextBeginTransparencyLayer(context, NULL);
+    CGContextSaveGState(context);
+    [rectangle3Path addClip];
+    CGContextScaleCTM(context, 1.0, -1.0);
+    CGContextDrawTiledImage(context, CGRectMake(14, -383, r8.size.width, r8.size.height), r8.CGImage);
+    CGContextRestoreGState(context);
+    CGContextEndTransparencyLayer(context);
+    CGContextRestoreGState(context);
+
+
+
+    //// Text Drawing
+    CGRect textRect = CGRectMake(106, 407, 108, 21);
+    {
+        NSString* textContent = @"Dream Car: ";
+        NSMutableParagraphStyle* textStyle = NSMutableParagraphStyle.defaultParagraphStyle.mutableCopy;
+        textStyle.alignment = NSTextAlignmentLeft;
+
+        NSDictionary* textFontAttributes = @{NSFontAttributeName: [UIFont fontWithName: @"STHeitiTC-Medium" size: UIFont.labelFontSize], NSForegroundColorAttributeName: UIColor.blackColor, NSParagraphStyleAttributeName: textStyle};
+
+        CGFloat textTextHeight = [textContent boundingRectWithSize: CGSizeMake(textRect.size.width, INFINITY)  options: NSStringDrawingUsesLineFragmentOrigin attributes: textFontAttributes context: nil].size.height;
+        CGContextSaveGState(context);
+        CGContextClipToRect(context, textRect);
+        [textContent drawInRect: CGRectMake(CGRectGetMinX(textRect), CGRectGetMinY(textRect) + (CGRectGetHeight(textRect) - textTextHeight) / 2, CGRectGetWidth(textRect), textTextHeight) withAttributes: textFontAttributes];
+        CGContextRestoreGState(context);
+    }
+}
+
 + (void)drawCanvas2
 {
     //// General Declarations

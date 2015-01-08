@@ -16,6 +16,7 @@
 
 // Drawing Methods
 + (void)drawCanvas1;
++ (void)drawAbout;
 + (void)drawCanvas2;
 + (void)drawTony;
 + (void)drawTeslaInspires;
