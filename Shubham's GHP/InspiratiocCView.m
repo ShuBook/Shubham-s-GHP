@@ -9,9 +9,7 @@
 #import "InspiratiocCView.h"
 
 @implementation InspiratiocCView
-
 - (void)drawRect:(CGRect)rect {
-    // Drawing code
     [StyleKitName drawCanvas2];
 }
 

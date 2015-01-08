@@ -83,6 +83,25 @@
             </objects>
             <point key="canvasLocation" x="-190" y="347"/>
         </scene>
+        <!--Spielberg-->
+        <scene sceneID="59e-Bw-Vnu">
+            <objects>
+                <viewController title="Spielberg" id="Kql-Ah-WDD" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1hH-gp-igX"/>
+                        <viewControllerLayoutGuide type="bottom" id="7zb-oY-t7f"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oyf-5z-h1O" customClass="SpielI">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ygC-0c-C1E"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sns-XE-nnG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="772" y="-52"/>
+        </scene>
         <!--Inspirations-->
         <scene sceneID="MQW-DV-d8l">
             <objects>
@@ -101,6 +120,9 @@
                                 <state key="normal" title="Spielberg">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="Kql-Ah-WDD" kind="push" id="7dz-aX-KxB"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DBy-Bg-eVQ">
                                 <rect key="frame" x="31" y="315" width="146" height="75"/>

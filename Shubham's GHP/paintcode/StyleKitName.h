@@ -20,5 +20,6 @@
 + (void)drawTony;
 + (void)drawTeslaInspires;
 + (void)drawJobsInspires;
++ (void)drawSpielberg;
 
 @end

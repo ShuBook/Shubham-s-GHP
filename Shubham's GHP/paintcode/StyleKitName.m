@@ -627,7 +627,7 @@
 
     //// Color Declarations
     UIColor* color5 = [UIColor colorWithRed: 0.184 green: 0.318 blue: 0.408 alpha: 1];
-    UIColor* color10 = [UIColor colorWithRed: 0.787 green: 0.797 blue: 0.203 alpha: 1];
+    UIColor* color11 = [UIColor colorWithRed: 0.18 green: 0.163 blue: 0.638 alpha: 1];
 
     //// Image Declarations
     UIImage* image6 = [UIImage imageNamed: @"image6.jpg"];
@@ -662,7 +662,7 @@
         NSMutableParagraphStyle* textStyle = NSMutableParagraphStyle.defaultParagraphStyle.mutableCopy;
         textStyle.alignment = NSTextAlignmentCenter;
 
-        NSDictionary* textFontAttributes = @{NSFontAttributeName: [UIFont fontWithName: @"STHeitiTC-Medium" size: 15], NSForegroundColorAttributeName: color10, NSParagraphStyleAttributeName: textStyle};
+        NSDictionary* textFontAttributes = @{NSFontAttributeName: [UIFont fontWithName: @"STHeitiTC-Medium" size: 15], NSForegroundColorAttributeName: color11, NSParagraphStyleAttributeName: textStyle};
 
         CGFloat textTextHeight = [textContent boundingRectWithSize: CGSizeMake(textRect.size.width, INFINITY)  options: NSStringDrawingUsesLineFragmentOrigin attributes: textFontAttributes context: nil].size.height;
         CGContextSaveGState(context);
@@ -679,7 +679,7 @@
         NSMutableParagraphStyle* text3Style = NSMutableParagraphStyle.defaultParagraphStyle.mutableCopy;
         text3Style.alignment = NSTextAlignmentCenter;
 
-        NSDictionary* text3FontAttributes = @{NSFontAttributeName: [UIFont fontWithName: @"STHeitiTC-Medium" size: 15], NSForegroundColorAttributeName: color10, NSParagraphStyleAttributeName: text3Style};
+        NSDictionary* text3FontAttributes = @{NSFontAttributeName: [UIFont fontWithName: @"STHeitiTC-Medium" size: 15], NSForegroundColorAttributeName: color11, NSParagraphStyleAttributeName: text3Style};
 
         CGFloat text3TextHeight = [textContent boundingRectWithSize: CGSizeMake(text3Rect.size.width, INFINITY)  options: NSStringDrawingUsesLineFragmentOrigin attributes: text3FontAttributes context: nil].size.height;
         CGContextSaveGState(context);
@@ -690,18 +690,19 @@
 
 
     //// Text 4 Drawing
-    CGRect text4Rect = CGRectMake(0, 313, 321, 98);
+    CGRect text4Rect = CGRectMake(0, 313, 321, 139);
     {
-        NSString* textContent = @" - Selfness, and how he works for others without gaining much\n - His habit of “tinkering”\n - He’s passionate about everything he does \n  ";
+        NSString* textContent = @" - Selfness, and how he works for others \n   without gaining much\n\n - His habit of “tinkering”\n\n - He’s passionate about everything \n   he does \n  ";
+        CGRect text4Inset = CGRectInset(text4Rect, 4, 0);
         NSMutableParagraphStyle* text4Style = NSMutableParagraphStyle.defaultParagraphStyle.mutableCopy;
         text4Style.alignment = NSTextAlignmentLeft;
 
-        NSDictionary* text4FontAttributes = @{NSFontAttributeName: [UIFont fontWithName: @"STHeitiTC-Medium" size: 15], NSForegroundColorAttributeName: color10, NSParagraphStyleAttributeName: text4Style};
+        NSDictionary* text4FontAttributes = @{NSFontAttributeName: [UIFont fontWithName: @"STHeitiTC-Medium" size: 15], NSForegroundColorAttributeName: color11, NSParagraphStyleAttributeName: text4Style};
 
-        CGFloat text4TextHeight = [textContent boundingRectWithSize: CGSizeMake(text4Rect.size.width, INFINITY)  options: NSStringDrawingUsesLineFragmentOrigin attributes: text4FontAttributes context: nil].size.height;
+        CGFloat text4TextHeight = [textContent boundingRectWithSize: CGSizeMake(text4Inset.size.width, INFINITY)  options: NSStringDrawingUsesLineFragmentOrigin attributes: text4FontAttributes context: nil].size.height;
         CGContextSaveGState(context);
-        CGContextClipToRect(context, text4Rect);
-        [textContent drawInRect: CGRectMake(CGRectGetMinX(text4Rect), CGRectGetMinY(text4Rect) + (CGRectGetHeight(text4Rect) - text4TextHeight) / 2, CGRectGetWidth(text4Rect), text4TextHeight) withAttributes: text4FontAttributes];
+        CGContextClipToRect(context, text4Inset);
+        [textContent drawInRect: CGRectMake(CGRectGetMinX(text4Inset), CGRectGetMinY(text4Inset) + (CGRectGetHeight(text4Inset) - text4TextHeight) / 2, CGRectGetWidth(text4Inset), text4TextHeight) withAttributes: text4FontAttributes];
         CGContextRestoreGState(context);
     }
 }
@@ -743,6 +744,152 @@
     CGFloat ovalPattern[] = {2, 2};
     [ovalPath setLineDash: ovalPattern count: 2 phase: 0];
     [ovalPath stroke];
+
+
+    //// Text Drawing
+    CGRect textRect = CGRectMake(10, 395, 321, 49);
+    {
+        NSString* textContent = @"- CoFounder of Apple Computers";
+        NSMutableParagraphStyle* textStyle = NSMutableParagraphStyle.defaultParagraphStyle.mutableCopy;
+        textStyle.alignment = NSTextAlignmentCenter;
+
+        NSDictionary* textFontAttributes = @{NSFontAttributeName: [UIFont fontWithName: @"STHeitiTC-Medium" size: 15], NSForegroundColorAttributeName: color8, NSParagraphStyleAttributeName: textStyle};
+
+        CGFloat textTextHeight = [textContent boundingRectWithSize: CGSizeMake(textRect.size.width, INFINITY)  options: NSStringDrawingUsesLineFragmentOrigin attributes: textFontAttributes context: nil].size.height;
+        CGContextSaveGState(context);
+        CGContextClipToRect(context, textRect);
+        [textContent drawInRect: CGRectMake(CGRectGetMinX(textRect), CGRectGetMinY(textRect) + (CGRectGetHeight(textRect) - textTextHeight) / 2, CGRectGetWidth(textRect), textTextHeight) withAttributes: textFontAttributes];
+        CGContextRestoreGState(context);
+    }
+
+
+    //// Text 3 Drawing
+    CGRect text3Rect = CGRectMake(0, 432, 321, 49);
+    {
+        NSString* textContent = @"How he inspires ME:";
+        NSMutableParagraphStyle* text3Style = NSMutableParagraphStyle.defaultParagraphStyle.mutableCopy;
+        text3Style.alignment = NSTextAlignmentCenter;
+
+        NSDictionary* text3FontAttributes = @{NSFontAttributeName: [UIFont fontWithName: @"STHeitiTC-Medium" size: 15], NSForegroundColorAttributeName: color8, NSParagraphStyleAttributeName: text3Style};
+
+        CGFloat text3TextHeight = [textContent boundingRectWithSize: CGSizeMake(text3Rect.size.width, INFINITY)  options: NSStringDrawingUsesLineFragmentOrigin attributes: text3FontAttributes context: nil].size.height;
+        CGContextSaveGState(context);
+        CGContextClipToRect(context, text3Rect);
+        [textContent drawInRect: CGRectMake(CGRectGetMinX(text3Rect), CGRectGetMinY(text3Rect) + (CGRectGetHeight(text3Rect) - text3TextHeight) / 2, CGRectGetWidth(text3Rect), text3TextHeight) withAttributes: text3FontAttributes];
+        CGContextRestoreGState(context);
+    }
+
+
+    //// Text 4 Drawing
+    CGRect text4Rect = CGRectMake(-2, 470, 322, 98);
+    {
+        NSString* textContent = @"  - Showes the true meaning of beauty \n\n  - Convinced others that the impossible \n     would be possible (iPod  Nano, fonts, \n     etc.)\n  ";
+        NSMutableParagraphStyle* text4Style = NSMutableParagraphStyle.defaultParagraphStyle.mutableCopy;
+        text4Style.alignment = NSTextAlignmentLeft;
+
+        NSDictionary* text4FontAttributes = @{NSFontAttributeName: [UIFont fontWithName: @"STHeitiTC-Medium" size: 15], NSForegroundColorAttributeName: color8, NSParagraphStyleAttributeName: text4Style};
+
+        CGFloat text4TextHeight = [textContent boundingRectWithSize: CGSizeMake(text4Rect.size.width, INFINITY)  options: NSStringDrawingUsesLineFragmentOrigin attributes: text4FontAttributes context: nil].size.height;
+        CGContextSaveGState(context);
+        CGContextClipToRect(context, text4Rect);
+        [textContent drawInRect: CGRectMake(CGRectGetMinX(text4Rect), CGRectGetMinY(text4Rect) + (CGRectGetHeight(text4Rect) - text4TextHeight) / 2, CGRectGetWidth(text4Rect), text4TextHeight) withAttributes: text4FontAttributes];
+        CGContextRestoreGState(context);
+    }
+}
+
++ (void)drawSpielberg
+{
+    //// General Declarations
+    CGContextRef context = UIGraphicsGetCurrentContext();
+
+    //// Color Declarations
+    UIColor* color = [UIColor colorWithRed: 0.871 green: 0.282 blue: 0.212 alpha: 1];
+    CGFloat colorHSBA[4];
+    [color getHue: &colorHSBA[0] saturation: &colorHSBA[1] brightness: &colorHSBA[2] alpha: &colorHSBA[3]];
+
+    UIColor* color8 = [UIColor colorWithHue: colorHSBA[0] saturation: 1 brightness: colorHSBA[2] alpha: colorHSBA[3]];
+    UIColor* color4 = [UIColor colorWithRed: 0.337 green: 0.588 blue: 0.737 alpha: 1];
+
+    //// Image Declarations
+    UIImage* image4 = [UIImage imageNamed: @"image4.jpg"];
+    UIImage* image9 = [UIImage imageNamed: @"image9.jpg"];
+
+    //// Rectangle 2 Drawing
+    UIBezierPath* rectangle2Path = [UIBezierPath bezierPathWithRect: CGRectMake(0, 0, 320, 568)];
+    [UIColor.blackColor setFill];
+    [rectangle2Path fill];
+
+
+    //// Rectangle Drawing
+    UIBezierPath* rectanglePath = [UIBezierPath bezierPathWithRect: CGRectMake(0, 0, 320, 568)];
+    CGContextSaveGState(context);
+    [rectanglePath addClip];
+    [image9 drawInRect: CGRectMake(2, 180, image9.size.width, image9.size.height)];
+    CGContextRestoreGState(context);
+
+
+    //// Oval Drawing
+    UIBezierPath* ovalPath = [UIBezierPath bezierPathWithOvalInRect: CGRectMake(86, 41, 132, 132)];
+    CGContextSaveGState(context);
+    [ovalPath addClip];
+    [image4 drawInRect: CGRectMake(106, 56, image4.size.width, image4.size.height)];
+    CGContextRestoreGState(context);
+    [color4 setStroke];
+    ovalPath.lineWidth = 4;
+    CGFloat ovalPattern[] = {2, 2};
+    [ovalPath setLineDash: ovalPattern count: 2 phase: 0];
+    [ovalPath stroke];
+
+
+    //// Text Drawing
+    CGRect textRect = CGRectMake(2, 408, 321, 49);
+    {
+        NSString* textContent = @"- Hollywood Director (Jaws, Jurassic Park, etc)";
+        NSMutableParagraphStyle* textStyle = NSMutableParagraphStyle.defaultParagraphStyle.mutableCopy;
+        textStyle.alignment = NSTextAlignmentCenter;
+
+        NSDictionary* textFontAttributes = @{NSFontAttributeName: [UIFont fontWithName: @"STHeitiTC-Medium" size: 15], NSForegroundColorAttributeName: color8, NSParagraphStyleAttributeName: textStyle};
+
+        CGFloat textTextHeight = [textContent boundingRectWithSize: CGSizeMake(textRect.size.width, INFINITY)  options: NSStringDrawingUsesLineFragmentOrigin attributes: textFontAttributes context: nil].size.height;
+        CGContextSaveGState(context);
+        CGContextClipToRect(context, textRect);
+        [textContent drawInRect: CGRectMake(CGRectGetMinX(textRect), CGRectGetMinY(textRect) + (CGRectGetHeight(textRect) - textTextHeight) / 2, CGRectGetWidth(textRect), textTextHeight) withAttributes: textFontAttributes];
+        CGContextRestoreGState(context);
+    }
+
+
+    //// Text 3 Drawing
+    CGRect text3Rect = CGRectMake(2, 444, 321, 49);
+    {
+        NSString* textContent = @"How he inspires ME:";
+        NSMutableParagraphStyle* text3Style = NSMutableParagraphStyle.defaultParagraphStyle.mutableCopy;
+        text3Style.alignment = NSTextAlignmentCenter;
+
+        NSDictionary* text3FontAttributes = @{NSFontAttributeName: [UIFont fontWithName: @"STHeitiTC-Medium" size: 15], NSForegroundColorAttributeName: color8, NSParagraphStyleAttributeName: text3Style};
+
+        CGFloat text3TextHeight = [textContent boundingRectWithSize: CGSizeMake(text3Rect.size.width, INFINITY)  options: NSStringDrawingUsesLineFragmentOrigin attributes: text3FontAttributes context: nil].size.height;
+        CGContextSaveGState(context);
+        CGContextClipToRect(context, text3Rect);
+        [textContent drawInRect: CGRectMake(CGRectGetMinX(text3Rect), CGRectGetMinY(text3Rect) + (CGRectGetHeight(text3Rect) - text3TextHeight) / 2, CGRectGetWidth(text3Rect), text3TextHeight) withAttributes: text3FontAttributes];
+        CGContextRestoreGState(context);
+    }
+
+
+    //// Text 4 Drawing
+    CGRect text4Rect = CGRectMake(0, 470, 322, 98);
+    {
+        NSString* textContent = @"  - Knows how to handle a team \n\n  - Beautiful Cinematography ";
+        NSMutableParagraphStyle* text4Style = NSMutableParagraphStyle.defaultParagraphStyle.mutableCopy;
+        text4Style.alignment = NSTextAlignmentLeft;
+
+        NSDictionary* text4FontAttributes = @{NSFontAttributeName: [UIFont fontWithName: @"STHeitiTC-Medium" size: 15], NSForegroundColorAttributeName: color8, NSParagraphStyleAttributeName: text4Style};
+
+        CGFloat text4TextHeight = [textContent boundingRectWithSize: CGSizeMake(text4Rect.size.width, INFINITY)  options: NSStringDrawingUsesLineFragmentOrigin attributes: text4FontAttributes context: nil].size.height;
+        CGContextSaveGState(context);
+        CGContextClipToRect(context, text4Rect);
+        [textContent drawInRect: CGRectMake(CGRectGetMinX(text4Rect), CGRectGetMinY(text4Rect) + (CGRectGetHeight(text4Rect) - text4TextHeight) / 2, CGRectGetWidth(text4Rect), text4TextHeight) withAttributes: text4FontAttributes];
+        CGContextRestoreGState(context);
+    }
 }
 
 @end
