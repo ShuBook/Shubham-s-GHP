@@ -78,7 +78,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T0Q-bC-eb9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="704" y="-720"/>
+            <point key="canvasLocation" x="766" y="-999"/>
         </scene>
         <!--About Me-->
         <scene sceneID="EYx-jh-7a6">
@@ -100,6 +100,72 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hvf-Yq-4nz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-30" y="-322"/>
+        </scene>
+        <!--Music-->
+        <scene sceneID="wAS-F6-1ks">
+            <objects>
+                <viewController title="Music" id="HSx-Wa-OXR" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="55j-zH-Ie4"/>
+                        <viewControllerLayoutGuide type="bottom" id="y6B-3T-KhF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dZe-uV-e7P">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hci-qh-ol2" customClass="Music">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QBV-ne-SHU" userLabel="EDM">
+                                        <rect key="frame" x="42" y="120" width="236" height="67"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" none="YES" button="YES" link="YES"/>
+                                        </accessibility>
+                                        <color key="tintColor" red="0.28482401969999999" green="0.31300103410000002" blue="0.63368055560000003" alpha="0.0" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="gotoEDM:" destination="Pmh-YM-6PT" eventType="touchUpInside" id="hPX-hu-AbZ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5FK-BM-htv" userLabel="Good">
+                                        <rect key="frame" x="42" y="240" width="236" height="67"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" none="YES" button="YES" link="YES"/>
+                                        </accessibility>
+                                        <color key="tintColor" red="0.28482401969999999" green="0.31300103410000002" blue="0.63368055560000003" alpha="0.0" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="gotoGood:" destination="Pmh-YM-6PT" eventType="touchUpInside" id="8sv-Ck-iDj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hs4-Rw-kaH" userLabel="Study">
+                                        <rect key="frame" x="42" y="360" width="236" height="67"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" none="YES" button="YES" link="YES"/>
+                                        </accessibility>
+                                        <color key="tintColor" red="0.28482401969999999" green="0.31300103410000002" blue="0.63368055560000003" alpha="0.0" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="gotoStudy:" destination="Pmh-YM-6PT" eventType="touchUpInside" id="TT4-AQ-Mzm"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="3Jk-0S-Zvw"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pmh-YM-6PT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-794" y="-757"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
@@ -124,7 +190,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XG8-fq-ZRt">
-                                <rect key="frame" x="34" y="295" width="249" height="36"/>
+                                <rect key="frame" x="34" y="300" width="249" height="36"/>
                                 <color key="tintColor" red="0.28482401969999999" green="0.31300103410000002" blue="0.63368055560000003" alpha="0.0" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Interests">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -134,21 +200,24 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="06U-vn-Xp8">
-                                <rect key="frame" x="33" y="340" width="249" height="36"/>
+                                <rect key="frame" x="33" y="350" width="249" height="36"/>
                                 <color key="tintColor" red="0.28482401969999999" green="0.31300103410000002" blue="0.63368055560000003" alpha="0.0" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Favorite Music">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="HSx-Wa-OXR" kind="push" id="jI9-Yq-JKg"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BvL-de-K1Y">
-                                <rect key="frame" x="33" y="385" width="249" height="36"/>
+                                <rect key="frame" x="33" y="400" width="249" height="36"/>
                                 <color key="tintColor" red="0.28482401969999999" green="0.31300103410000002" blue="0.63368055560000003" alpha="0.0" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Awards and Honors">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y8w-3T-7mu">
-                                <rect key="frame" x="34" y="430" width="249" height="36"/>
+                                <rect key="frame" x="34" y="450" width="249" height="36"/>
                                 <color key="tintColor" red="0.28482401969999999" green="0.31300103410000002" blue="0.63368055560000003" alpha="0.0" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Inspirations">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -157,15 +226,8 @@
                                     <segue destination="L3M-Ew-cmL" kind="push" id="V6u-kn-h1k"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tRd-8T-38l">
-                                <rect key="frame" x="34" y="475" width="249" height="36"/>
-                                <color key="tintColor" red="0.28482401969999999" green="0.31300103410000002" blue="0.63368055560000003" alpha="0.0" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Social Media">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nic-Ka-1BI">
-                                <rect key="frame" x="34" y="530" width="249" height="36"/>
+                                <rect key="frame" x="34" y="500" width="249" height="36"/>
                                 <color key="tintColor" red="0.28482401969999999" green="0.31300103410000002" blue="0.63368055560000003" alpha="0.0" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Source Code">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -329,7 +391,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dfH-zA-vfI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="816" y="516"/>
+            <point key="canvasLocation" x="754" y="510"/>
         </scene>
         <!--Tesla-->
         <scene sceneID="aE8-dx-Om3">
