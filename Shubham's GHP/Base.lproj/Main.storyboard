@@ -58,7 +58,57 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N80-Ht-CeM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-14" y="-1989"/>
+            <point key="canvasLocation" x="314" y="-2491"/>
+        </scene>
+        <!--Robotics-->
+        <scene sceneID="dA8-GH-ZNv">
+            <objects>
+                <viewController title="Robotics" id="Nsr-fW-74Z" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="n9i-7g-wf2"/>
+                        <viewControllerLayoutGuide type="bottom" id="2ar-OZ-Mgh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IAp-Hc-aH3" customClass="initRobotics">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sk0-2P-3Xc">
+                                <rect key="frame" x="75" y="503" width="171" height="41"/>
+                                <color key="tintColor" red="0.28482401969999999" green="0.31300103410000002" blue="0.63368055560000003" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="DGX-Iv-bx9" kind="push" id="39P-QU-EoQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="a5g-3E-EH3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HfV-ZX-pmN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="749" y="-1175"/>
+        </scene>
+        <!--moreRobotics-->
+        <scene sceneID="E1f-84-3XG">
+            <objects>
+                <viewController title="moreRobotics" id="DGX-Iv-bx9" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7UU-sz-Xcq"/>
+                        <viewControllerLayoutGuide type="bottom" id="dY0-ZV-lso"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tk9-6E-gIR" customClass="moreRobotics">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="clI-Y3-8RK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IF3-wz-2Bx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1243" y="-1894"/>
         </scene>
         <!--Interests-->
         <scene sceneID="AZd-BU-5nZ">
@@ -102,6 +152,9 @@
                                     <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="Nsr-fW-74Z" kind="push" id="9dI-SL-eww"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -110,7 +163,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WY3-gp-DId" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-30" y="-993"/>
+            <point key="canvasLocation" x="-166" y="-433"/>
         </scene>
         <!--3d-->
         <scene sceneID="FZb-9k-hAf">
@@ -134,7 +187,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T0Q-bC-eb9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="766" y="-999"/>
+            <point key="canvasLocation" x="1406" y="-575"/>
         </scene>
         <!--About Me-->
         <scene sceneID="EYx-jh-7a6">
@@ -155,7 +208,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hvf-Yq-4nz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-30" y="-322"/>
+            <point key="canvasLocation" x="834" y="62"/>
         </scene>
         <!--Music-->
         <scene sceneID="wAS-F6-1ks">
@@ -302,7 +355,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-793" y="157"/>
+            <point key="canvasLocation" x="-1737" y="-35"/>
         </scene>
         <!--Spielberg-->
         <scene sceneID="59e-Bw-Vnu">
@@ -321,7 +374,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sns-XE-nnG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="816" y="1212"/>
+            <point key="canvasLocation" x="888" y="2004"/>
         </scene>
         <!--Inspirations-->
         <scene sceneID="MQW-DV-d8l">
@@ -384,7 +437,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YKd-NC-19s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-30" y="527"/>
+            <point key="canvasLocation" x="-958" y="1791"/>
         </scene>
         <!--Steve Jobs-->
         <scene sceneID="V4X-vT-hyB">
@@ -403,7 +456,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XqD-TB-pGg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="794" y="1860"/>
+            <point key="canvasLocation" x="698" y="3228"/>
         </scene>
         <!--Tony Stark -->
         <scene sceneID="4U5-cf-qZS">
@@ -450,7 +503,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dfH-zA-vfI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="754" y="510"/>
+            <point key="canvasLocation" x="-222" y="606"/>
         </scene>
         <!--Tesla-->
         <scene sceneID="aE8-dx-Om3">
@@ -469,7 +522,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="svP-3n-1bt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1403" y="522"/>
+            <point key="canvasLocation" x="1003" y="946"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="IDC-EM-JiE">
@@ -487,7 +540,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rhe-a3-RUz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1494" y="151"/>
+            <point key="canvasLocation" x="-2510" y="47"/>
         </scene>
     </scenes>
     <resources>

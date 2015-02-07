@@ -26,6 +26,7 @@
 + (void)drawJobsInspires;
 + (void)drawSpielberg;
 + (void)drawAllInterests;
-+ (void)drawDraw3d;
++ (void)drawRobotics;
++ (void)drawMoreRobotics;
 
 @end

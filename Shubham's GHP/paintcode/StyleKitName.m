@@ -1422,10 +1422,16 @@
     //// Rectangle 2 Drawing
     UIBezierPath* rectangle2Path = [UIBezierPath bezierPathWithRoundedRect: CGRectMake(30.5, 100.5, 62, 61) cornerRadius: 7];
     CGContextSaveGState(context);
+    CGContextSetShadowWithColor(context, shadowOffset, shadowBlurRadius, [shadow CGColor]);
+    CGContextBeginTransparencyLayer(context, NULL);
+    CGContextSaveGState(context);
     [rectangle2Path addClip];
     CGContextScaleCTM(context, 1.0, -1.0);
     CGContextDrawTiledImage(context, CGRectMake(31, -101, image10.size.width, image10.size.height), image10.CGImage);
     CGContextRestoreGState(context);
+    CGContextEndTransparencyLayer(context);
+    CGContextRestoreGState(context);
+
     [color4 setStroke];
     rectangle2Path.lineWidth = 1;
     [rectangle2Path stroke];
@@ -1434,10 +1440,16 @@
     //// Rectangle 3 Drawing
     UIBezierPath* rectangle3Path = [UIBezierPath bezierPathWithRoundedRect: CGRectMake(228.5, 100.5, 62, 61) cornerRadius: 7];
     CGContextSaveGState(context);
+    CGContextSetShadowWithColor(context, shadowOffset, shadowBlurRadius, [shadow CGColor]);
+    CGContextBeginTransparencyLayer(context, NULL);
+    CGContextSaveGState(context);
     [rectangle3Path addClip];
     CGContextScaleCTM(context, 1.0, -1.0);
     CGContextDrawTiledImage(context, CGRectMake(229, -101, image11.size.width, image11.size.height), image11.CGImage);
     CGContextRestoreGState(context);
+    CGContextEndTransparencyLayer(context);
+    CGContextRestoreGState(context);
+
     [color4 setStroke];
     rectangle3Path.lineWidth = 1;
     [rectangle3Path stroke];
@@ -1446,10 +1458,16 @@
     //// Rectangle 4 Drawing
     UIBezierPath* rectangle4Path = [UIBezierPath bezierPathWithRoundedRect: CGRectMake(228.5, 371.5, 62, 61) cornerRadius: 7];
     CGContextSaveGState(context);
+    CGContextSetShadowWithColor(context, shadowOffset, shadowBlurRadius, [shadow CGColor]);
+    CGContextBeginTransparencyLayer(context, NULL);
+    CGContextSaveGState(context);
     [rectangle4Path addClip];
     CGContextScaleCTM(context, 1.0, -1.0);
     CGContextDrawTiledImage(context, CGRectMake(229, -372, image13.size.width, image13.size.height), image13.CGImage);
     CGContextRestoreGState(context);
+    CGContextEndTransparencyLayer(context);
+    CGContextRestoreGState(context);
+
     [color4 setStroke];
     rectangle4Path.lineWidth = 1;
     [rectangle4Path stroke];
@@ -1458,10 +1476,16 @@
     //// Rectangle 5 Drawing
     UIBezierPath* rectangle5Path = [UIBezierPath bezierPathWithRoundedRect: CGRectMake(30.5, 371.5, 62, 61) cornerRadius: 7];
     CGContextSaveGState(context);
+    CGContextSetShadowWithColor(context, shadowOffset, shadowBlurRadius, [shadow CGColor]);
+    CGContextBeginTransparencyLayer(context, NULL);
+    CGContextSaveGState(context);
     [rectangle5Path addClip];
     CGContextScaleCTM(context, 1.0, -1.0);
     CGContextDrawTiledImage(context, CGRectMake(31, -372, image12.size.width, image12.size.height), image12.CGImage);
     CGContextRestoreGState(context);
+    CGContextEndTransparencyLayer(context);
+    CGContextRestoreGState(context);
+
     [color4 setStroke];
     rectangle5Path.lineWidth = 1;
     [rectangle5Path stroke];
@@ -1484,7 +1508,143 @@
     }
 }
 
-+ (void)drawDraw3d
++ (void)drawRobotics
+{
+    //// General Declarations
+    CGContextRef context = UIGraphicsGetCurrentContext();
+
+    //// Color Declarations
+    UIColor* color = [UIColor colorWithRed: 0.871 green: 0.282 blue: 0.212 alpha: 1];
+    CGFloat colorHSBA[4];
+    [color getHue: &colorHSBA[0] saturation: &colorHSBA[1] brightness: &colorHSBA[2] alpha: &colorHSBA[3]];
+
+    UIColor* color8 = [UIColor colorWithHue: colorHSBA[0] saturation: 1 brightness: colorHSBA[2] alpha: colorHSBA[3]];
+    UIColor* color5 = [UIColor colorWithRed: 0.184 green: 0.318 blue: 0.408 alpha: 1];
+
+    //// Shadow Declarations
+    UIColor* shadow = UIColor.blackColor;
+    CGSize shadowOffset = CGSizeMake(3.1, 3.1);
+    CGFloat shadowBlurRadius = 5;
+
+    //// Image Declarations
+    UIImage* image15 = [UIImage imageNamed: @"image15.jpg"];
+    UIImage* image16 = [UIImage imageNamed: @"image16.jpg"];
+
+    //// Rectangle Drawing
+    UIBezierPath* rectanglePath = [UIBezierPath bezierPathWithRect: CGRectMake(0, 0, 320, 568)];
+    [color8 setFill];
+    [rectanglePath fill];
+
+
+    //// Text Drawing
+    CGRect textRect = CGRectMake(92, 43, 136, 33);
+    {
+        NSString* textContent = @"Robotics";
+        CGContextSaveGState(context);
+        CGContextSetShadowWithColor(context, shadowOffset, shadowBlurRadius, [shadow CGColor]);
+        NSMutableParagraphStyle* textStyle = NSMutableParagraphStyle.defaultParagraphStyle.mutableCopy;
+        textStyle.alignment = NSTextAlignmentCenter;
+
+        NSDictionary* textFontAttributes = @{NSFontAttributeName: [UIFont fontWithName: @"STHeitiTC-Medium" size: 21], NSForegroundColorAttributeName: UIColor.whiteColor, NSParagraphStyleAttributeName: textStyle};
+
+        CGFloat textTextHeight = [textContent boundingRectWithSize: CGSizeMake(textRect.size.width, INFINITY)  options: NSStringDrawingUsesLineFragmentOrigin attributes: textFontAttributes context: nil].size.height;
+        CGContextSaveGState(context);
+        CGContextClipToRect(context, textRect);
+        [textContent drawInRect: CGRectMake(CGRectGetMinX(textRect), CGRectGetMinY(textRect) + (CGRectGetHeight(textRect) - textTextHeight) / 2, CGRectGetWidth(textRect), textTextHeight) withAttributes: textFontAttributes];
+        CGContextRestoreGState(context);
+        CGContextRestoreGState(context);
+
+    }
+
+
+    //// Rectangle 2 Drawing
+    UIBezierPath* rectangle2Path = [UIBezierPath bezierPathWithRoundedRect: CGRectMake(80, 76, 161, 72) cornerRadius: 5];
+    CGContextSaveGState(context);
+    CGContextSetShadowWithColor(context, shadowOffset, shadowBlurRadius, [shadow CGColor]);
+    CGContextBeginTransparencyLayer(context, NULL);
+    CGContextSaveGState(context);
+    [rectangle2Path addClip];
+    CGContextScaleCTM(context, 1.0, -1.0);
+    CGContextDrawTiledImage(context, CGRectMake(80, -76, image15.size.width, image15.size.height), image15.CGImage);
+    CGContextRestoreGState(context);
+    CGContextEndTransparencyLayer(context);
+    CGContextRestoreGState(context);
+
+
+
+    //// Text 2 Drawing
+    CGRect text2Rect = CGRectMake(39, 148, 243, 113);
+    {
+        NSString* textContent = @"It all began in 7th grade with FLL, where my team won 7th in the state. The year afterword I became the Assistant TL, sadly we lost at super regionals";
+        NSMutableParagraphStyle* text2Style = NSMutableParagraphStyle.defaultParagraphStyle.mutableCopy;
+        text2Style.alignment = NSTextAlignmentCenter;
+
+        NSDictionary* text2FontAttributes = @{NSFontAttributeName: [UIFont fontWithName: @"STHeitiTC-Medium" size: 15], NSForegroundColorAttributeName: UIColor.whiteColor, NSParagraphStyleAttributeName: text2Style};
+
+        CGFloat text2TextHeight = [textContent boundingRectWithSize: CGSizeMake(text2Rect.size.width, INFINITY)  options: NSStringDrawingUsesLineFragmentOrigin attributes: text2FontAttributes context: nil].size.height;
+        CGContextSaveGState(context);
+        CGContextClipToRect(context, text2Rect);
+        [textContent drawInRect: CGRectMake(CGRectGetMinX(text2Rect), CGRectGetMinY(text2Rect) + (CGRectGetHeight(text2Rect) - text2TextHeight) / 2, CGRectGetWidth(text2Rect), text2TextHeight) withAttributes: text2FontAttributes];
+        CGContextRestoreGState(context);
+    }
+
+
+    //// Rectangle 3 Drawing
+    UIBezierPath* rectangle3Path = [UIBezierPath bezierPathWithRoundedRect: CGRectMake(80, 261, 161, 157) cornerRadius: 5];
+    CGContextSaveGState(context);
+    CGContextSetShadowWithColor(context, shadowOffset, shadowBlurRadius, [shadow CGColor]);
+    CGContextBeginTransparencyLayer(context, NULL);
+    CGContextSaveGState(context);
+    [rectangle3Path addClip];
+    CGContextScaleCTM(context, 1.0, -1.0);
+    CGContextDrawTiledImage(context, CGRectMake(80, -261, image16.size.width, image16.size.height), image16.CGImage);
+    CGContextRestoreGState(context);
+    CGContextEndTransparencyLayer(context);
+    CGContextRestoreGState(context);
+
+
+
+    //// Text 3 Drawing
+    CGRect text3Rect = CGRectMake(39, 429, 243, 61);
+    {
+        NSString* textContent = @"In high School I joined team 676, in FTC. In my rookie year we placed 13th in the state. ";
+        NSMutableParagraphStyle* text3Style = NSMutableParagraphStyle.defaultParagraphStyle.mutableCopy;
+        text3Style.alignment = NSTextAlignmentCenter;
+
+        NSDictionary* text3FontAttributes = @{NSFontAttributeName: [UIFont fontWithName: @"STHeitiTC-Medium" size: 15], NSForegroundColorAttributeName: UIColor.whiteColor, NSParagraphStyleAttributeName: text3Style};
+
+        CGFloat text3TextHeight = [textContent boundingRectWithSize: CGSizeMake(text3Rect.size.width, INFINITY)  options: NSStringDrawingUsesLineFragmentOrigin attributes: text3FontAttributes context: nil].size.height;
+        CGContextSaveGState(context);
+        CGContextClipToRect(context, text3Rect);
+        [textContent drawInRect: CGRectMake(CGRectGetMinX(text3Rect), CGRectGetMinY(text3Rect) + (CGRectGetHeight(text3Rect) - text3TextHeight) / 2, CGRectGetWidth(text3Rect), text3TextHeight) withAttributes: text3FontAttributes];
+        CGContextRestoreGState(context);
+    }
+
+
+    //// Rectangle 4 Drawing
+    CGRect rectangle4Rect = CGRectMake(74.5, 502.5, 171, 41);
+    UIBezierPath* rectangle4Path = [UIBezierPath bezierPathWithRoundedRect: rectangle4Rect cornerRadius: 5];
+    [color5 setFill];
+    [rectangle4Path fill];
+    [color setStroke];
+    rectangle4Path.lineWidth = 1;
+    [rectangle4Path stroke];
+    {
+        NSString* textContent = @"More Robotics";
+        NSMutableParagraphStyle* rectangle4Style = NSMutableParagraphStyle.defaultParagraphStyle.mutableCopy;
+        rectangle4Style.alignment = NSTextAlignmentCenter;
+
+        NSDictionary* rectangle4FontAttributes = @{NSFontAttributeName: [UIFont fontWithName: @"STHeitiTC-Medium" size: 15], NSForegroundColorAttributeName: UIColor.whiteColor, NSParagraphStyleAttributeName: rectangle4Style};
+
+        CGFloat rectangle4TextHeight = [textContent boundingRectWithSize: CGSizeMake(rectangle4Rect.size.width, INFINITY)  options: NSStringDrawingUsesLineFragmentOrigin attributes: rectangle4FontAttributes context: nil].size.height;
+        CGContextSaveGState(context);
+        CGContextClipToRect(context, rectangle4Rect);
+        [textContent drawInRect: CGRectMake(CGRectGetMinX(rectangle4Rect), CGRectGetMinY(rectangle4Rect) + (CGRectGetHeight(rectangle4Rect) - rectangle4TextHeight) / 2, CGRectGetWidth(rectangle4Rect), rectangle4TextHeight) withAttributes: rectangle4FontAttributes];
+        CGContextRestoreGState(context);
+    }
+}
+
++ (void)drawMoreRobotics
 {
     //// General Declarations
     CGContextRef context = UIGraphicsGetCurrentContext();
@@ -1496,33 +1656,20 @@
 
     UIColor* color8 = [UIColor colorWithHue: colorHSBA[0] saturation: 1 brightness: colorHSBA[2] alpha: colorHSBA[3]];
 
+    //// Image Declarations
+    UIImage* image17 = [UIImage imageNamed: @"image17.jpg"];
+    UIImage* image18 = [UIImage imageNamed: @"image18.jpg"];
+
     //// Rectangle Drawing
-    UIBezierPath* rectanglePath = [UIBezierPath bezierPathWithRect: CGRectMake(0, 0, 320, 1000)];
+    UIBezierPath* rectanglePath = [UIBezierPath bezierPathWithRect: CGRectMake(0, 0, 320, 568)];
     [color8 setFill];
     [rectanglePath fill];
 
 
-    //// Text Drawing
-    CGRect textRect = CGRectMake(78, 24, 165, 44);
-    {
-        NSString* textContent = @"3d Modeling\n";
-        NSMutableParagraphStyle* textStyle = NSMutableParagraphStyle.defaultParagraphStyle.mutableCopy;
-        textStyle.alignment = NSTextAlignmentCenter;
-
-        NSDictionary* textFontAttributes = @{NSFontAttributeName: [UIFont fontWithName: @"STHeitiTC-Medium" size: 21], NSForegroundColorAttributeName: UIColor.whiteColor, NSParagraphStyleAttributeName: textStyle};
-
-        CGFloat textTextHeight = [textContent boundingRectWithSize: CGSizeMake(textRect.size.width, INFINITY)  options: NSStringDrawingUsesLineFragmentOrigin attributes: textFontAttributes context: nil].size.height;
-        CGContextSaveGState(context);
-        CGContextClipToRect(context, textRect);
-        [textContent drawInRect: CGRectMake(CGRectGetMinX(textRect), CGRectGetMinY(textRect) + (CGRectGetHeight(textRect) - textTextHeight) / 2, CGRectGetWidth(textRect), textTextHeight) withAttributes: textFontAttributes];
-        CGContextRestoreGState(context);
-    }
-
-
     //// Text 2 Drawing
-    CGRect text2Rect = CGRectMake(92, 253, 136, 33);
+    CGRect text2Rect = CGRectMake(39, 45, 243, 113);
     {
-        NSString* textContent = @"Here are some of my recent projects in High School:";
+        NSString* textContent = @"During Sophomore year, I had a change of heart and joined VEX. I also founded the robotics club at my local high school. ";
         NSMutableParagraphStyle* text2Style = NSMutableParagraphStyle.defaultParagraphStyle.mutableCopy;
         text2Style.alignment = NSTextAlignmentCenter;
 
@@ -1532,6 +1679,41 @@
         CGContextSaveGState(context);
         CGContextClipToRect(context, text2Rect);
         [textContent drawInRect: CGRectMake(CGRectGetMinX(text2Rect), CGRectGetMinY(text2Rect) + (CGRectGetHeight(text2Rect) - text2TextHeight) / 2, CGRectGetWidth(text2Rect), text2TextHeight) withAttributes: text2FontAttributes];
+        CGContextRestoreGState(context);
+    }
+
+
+    //// Rectangle 2 Drawing
+    UIBezierPath* rectangle2Path = [UIBezierPath bezierPathWithRoundedRect: CGRectMake(83, 158, 156, 94) cornerRadius: 5];
+    CGContextSaveGState(context);
+    [rectangle2Path addClip];
+    CGContextScaleCTM(context, 1.0, -1.0);
+    CGContextDrawTiledImage(context, CGRectMake(83, -158, image18.size.width, image18.size.height), image18.CGImage);
+    CGContextRestoreGState(context);
+
+
+    //// Rectangle 3 Drawing
+    UIBezierPath* rectangle3Path = [UIBezierPath bezierPathWithRoundedRect: CGRectMake(82, 276, 156, 198) cornerRadius: 5];
+    CGContextSaveGState(context);
+    [rectangle3Path addClip];
+    CGContextScaleCTM(context, 1.0, -1.0);
+    CGContextDrawTiledImage(context, CGRectMake(82, -276, image17.size.width, image17.size.height), image17.CGImage);
+    CGContextRestoreGState(context);
+
+
+    //// Text Drawing
+    CGRect textRect = CGRectMake(39, 480, 243, 51);
+    {
+        NSString* textContent = @"In Vex, my team was 1st in the state, and 43rd in our WORLD Division";
+        NSMutableParagraphStyle* textStyle = NSMutableParagraphStyle.defaultParagraphStyle.mutableCopy;
+        textStyle.alignment = NSTextAlignmentLeft;
+
+        NSDictionary* textFontAttributes = @{NSFontAttributeName: [UIFont fontWithName: @"STHeitiTC-Medium" size: UIFont.systemFontSize], NSForegroundColorAttributeName: UIColor.whiteColor, NSParagraphStyleAttributeName: textStyle};
+
+        CGFloat textTextHeight = [textContent boundingRectWithSize: CGSizeMake(textRect.size.width, INFINITY)  options: NSStringDrawingUsesLineFragmentOrigin attributes: textFontAttributes context: nil].size.height;
+        CGContextSaveGState(context);
+        CGContextClipToRect(context, textRect);
+        [textContent drawInRect: CGRectMake(CGRectGetMinX(textRect), CGRectGetMinY(textRect) + (CGRectGetHeight(textRect) - textTextHeight) / 2, CGRectGetWidth(textRect), textTextHeight) withAttributes: textFontAttributes];
         CGContextRestoreGState(context);
     }
 }
