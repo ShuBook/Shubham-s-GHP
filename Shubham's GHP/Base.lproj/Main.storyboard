@@ -123,13 +123,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oED-D3-uEf">
-                                <rect key="frame" x="355" y="250" width="30" height="30"/>
+                                <rect key="frame" x="31" y="101" width="62" height="61"/>
                                 <state key="normal" title="3d">
                                     <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Pa2-Nz-Bye" kind="push" id="7Pf-g5-J5Q"/>
+                                    <segue destination="88E-rl-QXM" kind="push" id="PCo-pd-UV7"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yen-cd-FqY">
@@ -138,6 +138,9 @@
                                     <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="twS-zf-X14" kind="push" id="h7D-UA-x1r"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nwL-7g-Hvq">
                                 <rect key="frame" x="31" y="372" width="39" height="30"/>
@@ -166,28 +169,124 @@
             <point key="canvasLocation" x="-166" y="-433"/>
         </scene>
         <!--3d-->
-        <scene sceneID="FZb-9k-hAf">
+        <scene sceneID="YqT-9K-ALj">
             <objects>
-                <viewController title="3d" id="Pa2-Nz-Bye" sceneMemberID="viewController">
+                <viewController title="3d" id="88E-rl-QXM" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="inx-qz-Qbc"/>
-                        <viewControllerLayoutGuide type="bottom" id="Pqi-jg-peL"/>
+                        <viewControllerLayoutGuide type="top" id="i7g-UE-HvC"/>
+                        <viewControllerLayoutGuide type="bottom" id="Gmf-wQ-ja4"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="QwH-iR-fih">
+                    <view key="view" contentMode="scaleToFill" id="Pdk-DM-ixr" customClass="_d">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="23D-br-Gti">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Hr-VY-W3e">
+                                <rect key="frame" x="52" y="414" width="218" height="106"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="0.28482401969999999" green="0.31300103410000002" blue="0.63368055560000003" alpha="0.0" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="OqE-X2-eHu" kind="push" id="DlW-IZ-1qG"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="YSy-cU-ma4"/>
+                    <navigationItem key="navigationItem" id="WX1-p7-Dxh"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="T0Q-bC-eb9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iVS-W5-rqI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1406" y="-575"/>
+            <point key="canvasLocation" x="1414" y="-595"/>
+        </scene>
+        <!--3d samples-->
+        <scene sceneID="CzA-B1-Mia">
+            <objects>
+                <viewController title="3d samples" id="OqE-X2-eHu" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vCB-05-cUm"/>
+                        <viewControllerLayoutGuide type="bottom" id="jex-eU-bFV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="viS-0C-OnK">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ban3d.png" translatesAutoresizingMaskIntoConstraints="NO" id="9CI-zw-Fzi">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="240"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" image="YES" updatesFrequently="YES"/>
+                                </accessibility>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ban3ds.png" translatesAutoresizingMaskIntoConstraints="NO" id="gem-Ir-xHo">
+                                <rect key="frame" x="0.0" y="240" width="320" height="328"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bjy-kB-znF">
+                                <rect key="frame" x="160" y="500" width="100" height="80"/>
+                                <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="15"/>
+                                <state key="normal" title="View More!">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="OX5-eI-Q3H" kind="push" id="mll-x5-wD5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="QPf-00-fLN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w0o-Pg-87C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2060" y="-599"/>
+        </scene>
+        <!--more-->
+        <scene sceneID="aYH-ou-oR0">
+            <objects>
+                <viewController title="more" id="OX5-eI-Q3H" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yeI-9p-sLv"/>
+                        <viewControllerLayoutGuide type="bottom" id="Nh2-0f-34c"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="u1K-du-CS8">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fish3d.png" translatesAutoresizingMaskIntoConstraints="NO" id="WM8-io-wvK">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="328"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="minion3d.png" translatesAutoresizingMaskIntoConstraints="NO" id="EdH-QT-O9n">
+                                <rect key="frame" x="0.0" y="245" width="320" height="240"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" image="YES" updatesFrequently="YES"/>
+                                </accessibility>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="R2K-9N-bT8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rU1-1o-Ug7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2692" y="-599"/>
+        </scene>
+        <!--TSA-->
+        <scene sceneID="LVd-We-CFh">
+            <objects>
+                <viewController title="TSA" id="twS-zf-X14" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fZV-e7-YnO"/>
+                        <viewControllerLayoutGuide type="bottom" id="tbp-n2-2wV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ha1-YA-DQP" customClass="TSA">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="sZD-cW-7c8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Aic-10-hwo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2972" y="47"/>
         </scene>
         <!--About Me-->
         <scene sceneID="EYx-jh-7a6">
@@ -546,5 +645,9 @@
     <resources>
         <image name="3x 22-51-19-252.jpg" width="320" height="320"/>
         <image name="Screen Shot 2015-01-07 at 8.15.33 AM.png" width="321" height="569"/>
+        <image name="ban3d.png" width="320" height="235"/>
+        <image name="ban3ds.png" width="320" height="239"/>
+        <image name="fish3d.png" width="320" height="240"/>
+        <image name="minion3d.png" width="320" height="242"/>
     </resources>
 </document>

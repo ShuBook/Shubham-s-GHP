@@ -73,6 +73,14 @@
 		51EA1BB81A85C5C500B48309 /* image18.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 51EA1BB41A85C5C500B48309 /* image18.jpg */; };
 		51EA1BBB1A85C5FE00B48309 /* initRobotics.m in Sources */ = {isa = PBXBuildFile; fileRef = 51EA1BBA1A85C5FE00B48309 /* initRobotics.m */; };
 		51EA1BBE1A85C64000B48309 /* moreRobotics.m in Sources */ = {isa = PBXBuildFile; fileRef = 51EA1BBD1A85C64000B48309 /* moreRobotics.m */; };
+		51EA1BC41A85D8CD00B48309 /* 3d.m in Sources */ = {isa = PBXBuildFile; fileRef = 51EA1BC31A85D8CD00B48309 /* 3d.m */; };
+		51EA1BCA1A85DB0F00B48309 /* ban3d.png in Resources */ = {isa = PBXBuildFile; fileRef = 51EA1BC51A85DB0F00B48309 /* ban3d.png */; };
+		51EA1BCB1A85DB0F00B48309 /* ban3ds.png in Resources */ = {isa = PBXBuildFile; fileRef = 51EA1BC61A85DB0F00B48309 /* ban3ds.png */; };
+		51EA1BCC1A85DB0F00B48309 /* fish3d.png in Resources */ = {isa = PBXBuildFile; fileRef = 51EA1BC71A85DB0F00B48309 /* fish3d.png */; };
+		51EA1BCD1A85DB0F00B48309 /* minion3d.png in Resources */ = {isa = PBXBuildFile; fileRef = 51EA1BC81A85DB0F00B48309 /* minion3d.png */; };
+		51EA1BCE1A85DB0F00B48309 /* plane3d.png in Resources */ = {isa = PBXBuildFile; fileRef = 51EA1BC91A85DB0F00B48309 /* plane3d.png */; };
+		51EA1BD11A85E44B00B48309 /* TSA.m in Sources */ = {isa = PBXBuildFile; fileRef = 51EA1BD01A85E44B00B48309 /* TSA.m */; };
+		51EA1BD31A85E4CA00B48309 /* image19.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 51EA1BD21A85E4CA00B48309 /* image19.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -171,6 +179,16 @@
 		51EA1BBA1A85C5FE00B48309 /* initRobotics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = initRobotics.m; sourceTree = "<group>"; };
 		51EA1BBC1A85C64000B48309 /* moreRobotics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = moreRobotics.h; sourceTree = "<group>"; };
 		51EA1BBD1A85C64000B48309 /* moreRobotics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = moreRobotics.m; sourceTree = "<group>"; };
+		51EA1BC21A85D8CD00B48309 /* 3d.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = 3d.h; sourceTree = "<group>"; };
+		51EA1BC31A85D8CD00B48309 /* 3d.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = 3d.m; sourceTree = "<group>"; };
+		51EA1BC51A85DB0F00B48309 /* ban3d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ban3d.png; sourceTree = "<group>"; };
+		51EA1BC61A85DB0F00B48309 /* ban3ds.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ban3ds.png; sourceTree = "<group>"; };
+		51EA1BC71A85DB0F00B48309 /* fish3d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fish3d.png; sourceTree = "<group>"; };
+		51EA1BC81A85DB0F00B48309 /* minion3d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = minion3d.png; sourceTree = "<group>"; };
+		51EA1BC91A85DB0F00B48309 /* plane3d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plane3d.png; sourceTree = "<group>"; };
+		51EA1BCF1A85E44B00B48309 /* TSA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TSA.h; path = "Shubham's GHP/TSA.h"; sourceTree = "<group>"; };
+		51EA1BD01A85E44B00B48309 /* TSA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TSA.m; path = "Shubham's GHP/TSA.m"; sourceTree = "<group>"; };
+		51EA1BD21A85E4CA00B48309 /* image19.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image19.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +212,10 @@
 		5159D2281A5EF01F0013B37F /* classes */ = {
 			isa = PBXGroup;
 			children = (
+				51EA1BCF1A85E44B00B48309 /* TSA.h */,
+				51EA1BD01A85E44B00B48309 /* TSA.m */,
+				51EA1BC21A85D8CD00B48309 /* 3d.h */,
+				51EA1BC31A85D8CD00B48309 /* 3d.m */,
 				51EA1BB91A85C5FE00B48309 /* initRobotics.h */,
 				51EA1BBA1A85C5FE00B48309 /* initRobotics.m */,
 				51EA1BBC1A85C64000B48309 /* moreRobotics.h */,
@@ -288,6 +310,12 @@
 		51E1C6771A5B9A000081F458 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				51EA1BD21A85E4CA00B48309 /* image19.jpg */,
+				51EA1BC51A85DB0F00B48309 /* ban3d.png */,
+				51EA1BC61A85DB0F00B48309 /* ban3ds.png */,
+				51EA1BC71A85DB0F00B48309 /* fish3d.png */,
+				51EA1BC81A85DB0F00B48309 /* minion3d.png */,
+				51EA1BC91A85DB0F00B48309 /* plane3d.png */,
 				51EA1BB11A85C5C500B48309 /* image15.jpg */,
 				51EA1BB21A85C5C500B48309 /* image16.jpg */,
 				51EA1BB31A85C5C500B48309 /* image17.jpg */,
@@ -424,6 +452,7 @@
 				5159D2061A5EBFDB0013B37F /* image2.jpg in Resources */,
 				51EA1BB81A85C5C500B48309 /* image18.jpg in Resources */,
 				5159D20F1A5EBFDB0013B37F /* image5.jpg in Resources */,
+				51EA1BCA1A85DB0F00B48309 /* ban3d.png in Resources */,
 				5159D21F1A5EBFDB0013B37F /* instapic@2x.jpg in Resources */,
 				5159D2111A5EBFDB0013B37F /* image6.jpg in Resources */,
 				51EA1BB71A85C5C500B48309 /* image17.jpg in Resources */,
@@ -436,11 +465,14 @@
 				5159D21A1A5EBFDB0013B37F /* image10@2x.jpg in Resources */,
 				5159D20E1A5EBFDB0013B37F /* image4@3x.jpg in Resources */,
 				5159D1FF1A5EBFDB0013B37F /* 3x 22-51-19-252.jpg in Resources */,
+				51EA1BCE1A85DB0F00B48309 /* plane3d.png in Resources */,
 				5159D2131A5EBFDB0013B37F /* image6@3x.jpg in Resources */,
 				5159D2031A5EBFDB0013B37F /* image.jpg in Resources */,
+				51EA1BCB1A85DB0F00B48309 /* ban3ds.png in Resources */,
 				5159D21B1A5EBFDB0013B37F /* image11@2x.jpg in Resources */,
 				5159D2091A5EBFDB0013B37F /* image3.jpg in Resources */,
 				5159D2011A5EBFDB0013B37F /* arc@2x.jpg in Resources */,
+				51EA1BD31A85E4CA00B48309 /* image19.jpg in Resources */,
 				51E1C6611A5B81DA0081F458 /* LaunchScreen.xib in Resources */,
 				5159D20D1A5EBFDB0013B37F /* image4@2x.jpg in Resources */,
 				5159D2071A5EBFDB0013B37F /* image2@2x.jpg in Resources */,
@@ -452,6 +484,7 @@
 				5159D2101A5EBFDB0013B37F /* image5@2x.jpg in Resources */,
 				51E1C65E1A5B81DA0081F458 /* Images.xcassets in Resources */,
 				5159D2051A5EBFDB0013B37F /* image@3x.jpg in Resources */,
+				51EA1BCC1A85DB0F00B48309 /* fish3d.png in Resources */,
 				5159D2181A5EBFDB0013B37F /* image9.jpg in Resources */,
 				5159D21C1A5EBFDB0013B37F /* image12@2x.jpg in Resources */,
 				5159D2121A5EBFDB0013B37F /* image6@2x.jpg in Resources */,
@@ -467,6 +500,7 @@
 				51EA1BB61A85C5C500B48309 /* image16.jpg in Resources */,
 				5159D2021A5EBFDB0013B37F /* arc@3x.jpg in Resources */,
 				5159D2271A5EBFDB0013B37F /* Screen Shot 2015-01-07 at 8.15.33 AM.png in Resources */,
+				51EA1BCD1A85DB0F00B48309 /* minion3d.png in Resources */,
 				5159D2041A5EBFDB0013B37F /* image@2x.jpg in Resources */,
 				51EA1BB01A85B20900B48309 /* image14.jpg in Resources */,
 			);
@@ -486,6 +520,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51EA1BD11A85E44B00B48309 /* TSA.m in Sources */,
+				51EA1BC41A85D8CD00B48309 /* 3d.m in Sources */,
 				51E1C6591A5B81DA0081F458 /* ViewController.m in Sources */,
 				51EA1BBE1A85C64000B48309 /* moreRobotics.m in Sources */,
 				5159D1D51A5EBF5A0013B37F /* InterestsAll.m in Sources */,
