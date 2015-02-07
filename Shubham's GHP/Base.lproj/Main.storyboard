@@ -4,6 +4,62 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
+        <!--Honors-->
+        <scene sceneID="bJn-Od-OhO">
+            <objects>
+                <viewController title="Honors" id="OSX-4q-Yec" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NE3-aF-VUX"/>
+                        <viewControllerLayoutGuide type="bottom" id="Huh-uz-Vne"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0A3-kz-2uK">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ke3-eg-BVI" customClass="honors">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0vy-hm-N4y">
+                                        <rect key="frame" x="55" y="482" width="212" height="70"/>
+                                        <color key="tintColor" red="0.28482401969999999" green="0.31300103410000002" blue="0.63368055560000003" alpha="0.0" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="686-xn-pZg" kind="push" id="BrQ-du-B1M"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="z5v-dC-kVG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sib-lF-rSS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-690" y="-1977"/>
+        </scene>
+        <!--Vletter-->
+        <scene sceneID="eXW-SS-Uor">
+            <objects>
+                <viewController title="Vletter" id="686-xn-pZg" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Lsb-3f-gCB"/>
+                        <viewControllerLayoutGuide type="bottom" id="XLK-hP-dsJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pBu-XI-gmR" customClass="Vleeeter">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="09N-d6-q32"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N80-Ht-CeM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-14" y="-1989"/>
+        </scene>
         <!--Interests-->
         <scene sceneID="AZd-BU-5nZ">
             <objects>
@@ -215,6 +271,9 @@
                                 <state key="normal" title="Awards and Honors">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="OSX-4q-Yec" kind="push" id="lCH-O8-1c9"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y8w-3T-7mu">
                                 <rect key="frame" x="34" y="450" width="249" height="36"/>
