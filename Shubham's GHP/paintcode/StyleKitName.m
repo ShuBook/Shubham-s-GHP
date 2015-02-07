@@ -1917,4 +1917,94 @@
     CGContextRestoreGState(context);
 }
 
++ (void)drawVideoProduction
+{
+    //// General Declarations
+    CGContextRef context = UIGraphicsGetCurrentContext();
+
+    //// Color Declarations
+    UIColor* color = [UIColor colorWithRed: 0.871 green: 0.282 blue: 0.212 alpha: 1];
+    CGFloat colorHSBA[4];
+    [color getHue: &colorHSBA[0] saturation: &colorHSBA[1] brightness: &colorHSBA[2] alpha: &colorHSBA[3]];
+
+    UIColor* color8 = [UIColor colorWithHue: colorHSBA[0] saturation: 1 brightness: colorHSBA[2] alpha: colorHSBA[3]];
+
+    //// Shadow Declarations
+    UIColor* shadow = UIColor.blackColor;
+    CGSize shadowOffset = CGSizeMake(3.1, 3.1);
+    CGFloat shadowBlurRadius = 5;
+
+    //// Image Declarations
+    UIImage* image20 = [UIImage imageNamed: @"image20.jpg"];
+
+    //// Rectangle Drawing
+    UIBezierPath* rectanglePath = [UIBezierPath bezierPathWithRect: CGRectMake(0, -1, 320, 568)];
+    [color8 setFill];
+    [rectanglePath fill];
+
+
+    //// Text 2 Drawing
+    CGRect text2Rect = CGRectMake(58, 57, 204, 52);
+    {
+        NSString* textContent = @"Video Production";
+        CGContextSaveGState(context);
+        CGContextSetShadowWithColor(context, shadowOffset, shadowBlurRadius, [shadow CGColor]);
+        NSMutableParagraphStyle* text2Style = NSMutableParagraphStyle.defaultParagraphStyle.mutableCopy;
+        text2Style.alignment = NSTextAlignmentCenter;
+
+        NSDictionary* text2FontAttributes = @{NSFontAttributeName: [UIFont fontWithName: @"STHeitiTC-Medium" size: 21], NSForegroundColorAttributeName: UIColor.whiteColor, NSParagraphStyleAttributeName: text2Style};
+
+        CGFloat text2TextHeight = [textContent boundingRectWithSize: CGSizeMake(text2Rect.size.width, INFINITY)  options: NSStringDrawingUsesLineFragmentOrigin attributes: text2FontAttributes context: nil].size.height;
+        CGContextSaveGState(context);
+        CGContextClipToRect(context, text2Rect);
+        [textContent drawInRect: CGRectMake(CGRectGetMinX(text2Rect), CGRectGetMinY(text2Rect) + (CGRectGetHeight(text2Rect) - text2TextHeight) / 2, CGRectGetWidth(text2Rect), text2TextHeight) withAttributes: text2FontAttributes];
+        CGContextRestoreGState(context);
+        CGContextRestoreGState(context);
+
+    }
+
+
+    //// Text Drawing
+    CGRect textRect = CGRectMake(27, 109, 267, 148);
+    {
+        NSString* textContent = @"- I started in 7th grade, and worked my way up since then. I now have group (Sylvr) which makes videos for school and competitions. Click the image for a playlist with some special videos";
+        NSMutableParagraphStyle* textStyle = NSMutableParagraphStyle.defaultParagraphStyle.mutableCopy;
+        textStyle.alignment = NSTextAlignmentLeft;
+
+        NSDictionary* textFontAttributes = @{NSFontAttributeName: [UIFont fontWithName: @"STHeitiTC-Medium" size: UIFont.labelFontSize], NSForegroundColorAttributeName: UIColor.whiteColor, NSParagraphStyleAttributeName: textStyle};
+
+        CGFloat textTextHeight = [textContent boundingRectWithSize: CGSizeMake(textRect.size.width, INFINITY)  options: NSStringDrawingUsesLineFragmentOrigin attributes: textFontAttributes context: nil].size.height;
+        CGContextSaveGState(context);
+        CGContextClipToRect(context, textRect);
+        [textContent drawInRect: CGRectMake(CGRectGetMinX(textRect), CGRectGetMinY(textRect) + (CGRectGetHeight(textRect) - textTextHeight) / 2, CGRectGetWidth(textRect), textTextHeight) withAttributes: textFontAttributes];
+        CGContextRestoreGState(context);
+    }
+
+
+    //// Rectangle 2 Drawing
+    UIBezierPath* rectangle2Path = [UIBezierPath bezierPathWithRect: CGRectMake(1, 269, 319, 177)];
+    CGContextSaveGState(context);
+    [rectangle2Path addClip];
+    CGContextScaleCTM(context, 1.0, -1.0);
+    CGContextDrawTiledImage(context, CGRectMake(1, -269, image20.size.width, image20.size.height), image20.CGImage);
+    CGContextRestoreGState(context);
+
+
+    //// Text 3 Drawing
+    CGRect text3Rect = CGRectMake(10, 462, 267, 115);
+    {
+        NSString* textContent = @"- 10th place DVP\n- 9th place Ondemand\n- Internship experience\n- School Video\n";
+        NSMutableParagraphStyle* text3Style = NSMutableParagraphStyle.defaultParagraphStyle.mutableCopy;
+        text3Style.alignment = NSTextAlignmentLeft;
+
+        NSDictionary* text3FontAttributes = @{NSFontAttributeName: [UIFont fontWithName: @"STHeitiTC-Medium" size: UIFont.labelFontSize], NSForegroundColorAttributeName: UIColor.whiteColor, NSParagraphStyleAttributeName: text3Style};
+
+        CGFloat text3TextHeight = [textContent boundingRectWithSize: CGSizeMake(text3Rect.size.width, INFINITY)  options: NSStringDrawingUsesLineFragmentOrigin attributes: text3FontAttributes context: nil].size.height;
+        CGContextSaveGState(context);
+        CGContextClipToRect(context, text3Rect);
+        [textContent drawInRect: CGRectMake(CGRectGetMinX(text3Rect), CGRectGetMinY(text3Rect) + (CGRectGetHeight(text3Rect) - text3TextHeight) / 2, CGRectGetWidth(text3Rect), text3TextHeight) withAttributes: text3FontAttributes];
+        CGContextRestoreGState(context);
+    }
+}
+
 @end

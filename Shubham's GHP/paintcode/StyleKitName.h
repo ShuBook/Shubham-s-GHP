@@ -30,5 +30,6 @@
 + (void)drawMoreRobotics;
 + (void)drawThreedmodeling;
 + (void)drawTSA;
++ (void)drawVideoProduction;
 
 @end

@@ -81,6 +81,10 @@
 		51EA1BCE1A85DB0F00B48309 /* plane3d.png in Resources */ = {isa = PBXBuildFile; fileRef = 51EA1BC91A85DB0F00B48309 /* plane3d.png */; };
 		51EA1BD11A85E44B00B48309 /* TSA.m in Sources */ = {isa = PBXBuildFile; fileRef = 51EA1BD01A85E44B00B48309 /* TSA.m */; };
 		51EA1BD31A85E4CA00B48309 /* image19.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 51EA1BD21A85E4CA00B48309 /* image19.jpg */; };
+		51EA1BDB1A85E69600B48309 /* Assets in Resources */ = {isa = PBXBuildFile; fileRef = 51EA1BDA1A85E69600B48309 /* Assets */; };
+		51EA1BDE1A85E6AA00B48309 /* YTPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 51EA1BDD1A85E6AA00B48309 /* YTPlayerView.m */; };
+		51EA1BE11A85E8A200B48309 /* vd.m in Sources */ = {isa = PBXBuildFile; fileRef = 51EA1BE01A85E8A200B48309 /* vd.m */; };
+		51EA1BE31A85EB0100B48309 /* image20.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 51EA1BE21A85EB0100B48309 /* image20.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -189,6 +193,12 @@
 		51EA1BCF1A85E44B00B48309 /* TSA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TSA.h; path = "Shubham's GHP/TSA.h"; sourceTree = "<group>"; };
 		51EA1BD01A85E44B00B48309 /* TSA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TSA.m; path = "Shubham's GHP/TSA.m"; sourceTree = "<group>"; };
 		51EA1BD21A85E4CA00B48309 /* image19.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image19.jpg; sourceTree = "<group>"; };
+		51EA1BDA1A85E69600B48309 /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Assets; sourceTree = "<group>"; };
+		51EA1BDC1A85E6AA00B48309 /* YTPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTPlayerView.h; sourceTree = "<group>"; };
+		51EA1BDD1A85E6AA00B48309 /* YTPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTPlayerView.m; sourceTree = "<group>"; };
+		51EA1BDF1A85E8A200B48309 /* vd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = vd.h; path = "Shubham's GHP/vd.h"; sourceTree = "<group>"; };
+		51EA1BE01A85E8A200B48309 /* vd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = vd.m; path = "Shubham's GHP/vd.m"; sourceTree = "<group>"; };
+		51EA1BE21A85EB0100B48309 /* image20.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image20.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,6 +222,8 @@
 		5159D2281A5EF01F0013B37F /* classes */ = {
 			isa = PBXGroup;
 			children = (
+				51EA1BDF1A85E8A200B48309 /* vd.h */,
+				51EA1BE01A85E8A200B48309 /* vd.m */,
 				51EA1BCF1A85E44B00B48309 /* TSA.h */,
 				51EA1BD01A85E44B00B48309 /* TSA.m */,
 				51EA1BC21A85D8CD00B48309 /* 3d.h */,
@@ -266,6 +278,9 @@
 		51E1C64F1A5B81DA0081F458 /* Shubham's GHP */ = {
 			isa = PBXGroup;
 			children = (
+				51EA1BDC1A85E6AA00B48309 /* YTPlayerView.h */,
+				51EA1BDD1A85E6AA00B48309 /* YTPlayerView.m */,
+				51EA1BDA1A85E69600B48309 /* Assets */,
 				51E1C6771A5B9A000081F458 /* images */,
 				51E1C67B1A5B9A000081F458 /* StyleKitName.h */,
 				51E1C67C1A5B9A000081F458 /* StyleKitName.m */,
@@ -310,6 +325,7 @@
 		51E1C6771A5B9A000081F458 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				51EA1BE21A85EB0100B48309 /* image20.jpg */,
 				51EA1BD21A85E4CA00B48309 /* image19.jpg */,
 				51EA1BC51A85DB0F00B48309 /* ban3d.png */,
 				51EA1BC61A85DB0F00B48309 /* ban3ds.png */,
@@ -462,6 +478,7 @@
 				5159D2251A5EBFDB0013B37F /* r8@2x.png in Resources */,
 				5159D2261A5EBFDB0013B37F /* r8@3x.png in Resources */,
 				5159D2241A5EBFDB0013B37F /* r8.png in Resources */,
+				51EA1BE31A85EB0100B48309 /* image20.jpg in Resources */,
 				5159D21A1A5EBFDB0013B37F /* image10@2x.jpg in Resources */,
 				5159D20E1A5EBFDB0013B37F /* image4@3x.jpg in Resources */,
 				5159D1FF1A5EBFDB0013B37F /* 3x 22-51-19-252.jpg in Resources */,
@@ -489,6 +506,7 @@
 				5159D21C1A5EBFDB0013B37F /* image12@2x.jpg in Resources */,
 				5159D2121A5EBFDB0013B37F /* image6@2x.jpg in Resources */,
 				5159D2221A5EBFDB0013B37F /* ironMan@2x.jpg in Resources */,
+				51EA1BDB1A85E69600B48309 /* Assets in Resources */,
 				5159D20A1A5EBFDB0013B37F /* image3@2x.jpg in Resources */,
 				5159D2191A5EBFDB0013B37F /* image9@2x.jpg in Resources */,
 				5159D21D1A5EBFDB0013B37F /* image13@2x.jpg in Resources */,
@@ -525,11 +543,13 @@
 				51E1C6591A5B81DA0081F458 /* ViewController.m in Sources */,
 				51EA1BBE1A85C64000B48309 /* moreRobotics.m in Sources */,
 				5159D1D51A5EBF5A0013B37F /* InterestsAll.m in Sources */,
+				51EA1BE11A85E8A200B48309 /* vd.m in Sources */,
 				51D749E31A5DDC4400D10666 /* JobsI.m in Sources */,
 				51EA1BAB1A85A98400B48309 /* honors.m in Sources */,
 				51CE94481A83AEB9009AC9EB /* Music.m in Sources */,
 				51E1C6561A5B81DA0081F458 /* AppDelegate.m in Sources */,
 				51D74AFC1A5E1A9800D10666 /* AboutMe.m in Sources */,
+				51EA1BDE1A85E6AA00B48309 /* YTPlayerView.m in Sources */,
 				51EA1BAE1A85B17600B48309 /* Vleeeter.m in Sources */,
 				51E1C6531A5B81DA0081F458 /* main.m in Sources */,
 				51D74A621A5DF36800D10666 /* SpielI.m in Sources */,

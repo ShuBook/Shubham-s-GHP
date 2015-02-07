@@ -139,15 +139,18 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="twS-zf-X14" kind="push" id="h7D-UA-x1r"/>
+                                    <segue destination="twS-zf-X14" kind="push" id="DqA-1Y-Dhu"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nwL-7g-Hvq">
-                                <rect key="frame" x="31" y="372" width="39" height="30"/>
+                                <rect key="frame" x="31" y="372" width="61" height="61"/>
                                 <state key="normal" title="Video">
                                     <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="gEU-SZ-Qk7" kind="push" id="fdb-Q5-c9q"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6XV-DY-eXC">
                                 <rect key="frame" x="229" y="372" width="62" height="61"/>
@@ -269,6 +272,37 @@
             </objects>
             <point key="canvasLocation" x="2692" y="-599"/>
         </scene>
+        <!--Video-->
+        <scene sceneID="2MI-Vx-dOz">
+            <objects>
+                <viewController title="Video" id="gEU-SZ-Qk7" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3Fi-H4-uC3"/>
+                        <viewControllerLayoutGuide type="bottom" id="Qmf-aj-UIC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fVp-0r-A4w" customClass="vd">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6b1-4W-V12">
+                                <rect key="frame" x="0.0" y="269" width="319" height="177"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="0.28482401969999999" green="0.31300103410000002" blue="0.63368055560000003" alpha="0.0" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goToYT:" destination="xGz-Un-343" eventType="touchUpInside" id="7qb-uq-WN4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="MDW-YO-1MF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xGz-Un-343" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4232" y="-764"/>
+        </scene>
         <!--TSA-->
         <scene sceneID="LVd-We-CFh">
             <objects>
@@ -282,11 +316,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="sZD-cW-7c8"/>
+                    <navigationItem key="navigationItem" id="mRZ-cL-Q8a"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Aic-10-hwo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2972" y="47"/>
+            <point key="canvasLocation" x="2868" y="231"/>
         </scene>
         <!--About Me-->
         <scene sceneID="EYx-jh-7a6">
